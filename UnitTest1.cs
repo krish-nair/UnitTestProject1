@@ -86,5 +86,14 @@ namespace UnitTestProject1
             Thread.Sleep(3000);
             driver.Quit();
         }
+        [TestMethod]
+        public void GitTut()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://www.techexpozed.co.nz";
+            driver.Manage().Window.FullScreen();
+            Thread.Sleep(3000);
+            driver.Quit();
+        }
     }
 }
