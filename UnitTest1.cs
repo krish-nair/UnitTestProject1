@@ -91,7 +91,8 @@ namespace UnitTestProject1
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "http://www.techexpozed.co.nz";
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
+            driver.Manage().Window.Minimize();
             Thread.Sleep(3000);
             driver.Quit();
         }
